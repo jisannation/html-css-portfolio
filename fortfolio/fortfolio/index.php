@@ -49,22 +49,6 @@
   </header>
 
   <main>
-    <?php
-    if ( have_posts() ) :
-      while ( have_posts() ) : the_post();
-        if ( ! empty( get_the_content() ) ) :
-    ?>
-      <section class="section elementor-builder-content" style="padding-block: 40px;">
-        <div class="container">
-          <?php the_content(); ?>
-        </div>
-      </section>
-    <?php
-        endif;
-      endwhile;
-    endif;
-    ?>
-
     <section class="hero" id="home">
       <div class="container hero-container">
         <div class="hero-content">
